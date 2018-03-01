@@ -1,0 +1,1 @@
+run by navigating to button-coding-challenge directory and running "node app.js"
