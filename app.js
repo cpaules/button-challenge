@@ -6,16 +6,16 @@ function expressionEval(input) {
     // or finding an operator and performing the operation
     for (let i = inputArr.length; i >= 0; i--) {
         if (parseInt(inputArr[i])) {
-            arr.push(inputArr[i]);
+            arr.push(parseInt(inputArr[i]));
         }
         else if (inputArr[i] === "+") {
-            let var1 = parseInt(arr.pop());
-            let var2 = parseInt(arr.pop());
+            let var1 = arr.pop();
+            let var2 = arr.pop();
             arr.push(var1 + var2);
         }
         else if (inputArr[i] === "-") {
-            let var1 = parseInt(arr.pop());
-            let var2 = parseInt(arr.pop());
+            let var1 = arr.pop();
+            let var2 = arr.pop();
             arr.push(var1 - var2);
         }
     }
